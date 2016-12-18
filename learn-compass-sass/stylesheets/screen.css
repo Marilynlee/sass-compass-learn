@@ -1,0 +1,403 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*!
+ * Contents
+ * variables......................变量集中存储文件
+ *
+ * Settings
+ *
+ * Tools
+ *
+ * Components
+ * reset........................compass内置的浏览器样式重置文件
+ * mixin........................mixin集中存储文件
+ *
+ * business
+ *
+ * base
+ * screen......................针对当前站点的样式修饰文件
+ */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*//按需引入normalize的子模块
+@import "normalize-version";
+/!*分割线1*!/
+@import "normalize/base";
+/!*分割线2*!/
+@import "normalize/html5";
+/!*分割线3*!/*/
+/*@import "compass/reset/utilities";
+@include global-reset();
+//@import "compass/reset";*/
+/*//layout练习
+@import "compass/layout";
+.stretch-full{
+  @include stretch(5px,0,4px,8px);
+}
+@include sticky-footer(30px);
+$grid-background-column-color:rgba(255,0,0,.25);
+#root{
+  @include grid-background();
+}*/
+/*//css3模块练习
+@import "compass/css3";
+@import "compass/support";
+//@debug browsers();//查看所支持的浏览器
+//$supported-browsers:chrome firefox;//配置支持的浏览器
+//$supported-minimum-versions:("ie":"8");//配置最低支持浏览器的版本
+.text-inline-block{
+  @include inline-block();
+}
+.text-opacity{
+  @include opacity(0.8);
+}*/
+/*//typography模块
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/support";
+@import "compass/typography";
+a{
+  //@include hover-link();
+  @include link-colors(#00c,#0cc,#c0c,#ccc,#cc0);
+  //@include unstyled-link();
+}
+
+.list-unstyled{
+  @include no-bullets();
+}
+.list-unstyled-li{
+  @include no-bullet();
+}
+.list-inline{
+  @include inline-list();
+}
+.list-horizontal{
+  @include horizontal-list(20px,right);
+}
+.list-inline-block{
+  @include inline-block-list(10px);
+}
+.text-force-wrap{
+  @include force-wrap();
+}
+.text-nowrap{
+  @include nowrap();
+}
+$use-mozilla-ellipsis-binding:true;
+.text-ellipsis{
+  @include ellipsis();
+}
+.text-hide{
+  @include hide-text();
+  @include squish-text();
+}
+.text-place{
+  @include replace-text("http://cdn.qq.com/imgs/find-btn.png");
+}
+$base-font-size:16px;
+$base-line-height:24px;
+@include establish-baseline();
+body{
+  @include debug-vertical-alignment();
+}
+h1{
+  @include adjust-font-size-to(48px);
+}
+h2{
+  @include adjust-font-size-to(36px);
+}
+h3{
+  @include adjust-font-size-to(24px);
+}
+h4{
+  @include adjust-font-size-to(21px);
+}
+h5 {
+  @include adjust-font-size-to(18px);
+}
+p{
+  @include adjust-font-size-to(16px);
+  @include leader();
+  @include trailer();
+}*/
+.headline {
+  font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serfif;
+}
+
+.main-sec {
+  font-family: Arial, Verdana, Helvetica, sans-serfif;
+  -moz-box-shadow: 1px 1px 3px 2px #cfcecf;
+  -webkit-box-shadow: 1px 1px 3px 2px #cfcecf;
+  box-shadow: 1px 1px 3px 2px #cfcecf;
+}
+.main-sec-headline {
+  font-family: Arial, Verdana, Helvetica, sans-serfif;
+  font-size: 16px;
+}
+
+.main-sec-detail {
+  font-size: 12px;
+}
+
+p {
+  color: #8000ff;
+}
+
+@media (min-width: 768px) {
+  .webdemo-sec {
+    width: 50%;
+    float: left;
+  }
+}
+.webdemo-sec:hover {
+  background: #f5f5f5;
+}
+
+.error, .serious-error {
+  color: #f00;
+}
+
+.serious-error {
+  border: 1px solid #f00;
+}
+
+.logo {
+  background-image: url('../images/13.jpg?1462542985');
+}
+
+@font-face {
+  font-family: "glyphicons";
+  src: url('../fonts/glyphicons.eot?1434441378') format('embedded-opentype'), url('../fonts/glyphicons.woff2?1434441378') format('woff2'), url('../fonts/glyphicons.svg?1434441378') format('svg'), url('../fonts/glyphicons.ttf?1434441378') format('truetype'), url('../fonts/glyphicons.woff?1434441378') format('woff');
+}
+p.bar, div.bar, span.bar {
+  color: green;
+}
