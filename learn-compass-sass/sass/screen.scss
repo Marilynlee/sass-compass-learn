@@ -180,4 +180,62 @@ p{
   color:green;
 }
 
+.goods-price{
+  $table-color:#7a98c6;
+  @include outer-table-borders();
+  @include inner-table-borders(1px,darken($table-color,40%));
+  @include table-scaffolding();
+  @include alternating-rows-and-columns($table-color,adjust_hue($table-color,-120deg),#222);
+}
+
+.clearfix{
+  @include clearfix();
+}
+
+.clear{
+  @include pie-clearfix();
+}
+
+.has-layout{
+  @include has-layout();
+}
+
+.min-height{
+  @include min-height(20px);
+}
+
+.tag-cloud{
+  @include tag-cloud(24px);
+}
+
+
+.box{
+  background: yellow;
+  width:500px;
+
+  &{
+    .item1{
+      background: red;
+      height:200px;
+      @include col(200px);
+    }
+    .item2{
+      background: green;
+      @extend .item1;
+    }
+  }
+}
+
+
+@import "compass/utilities";
+@import "icons";
+
+
+.main-logo{
+  @include logo-sprite("a");
+}
+
+
+
+
 

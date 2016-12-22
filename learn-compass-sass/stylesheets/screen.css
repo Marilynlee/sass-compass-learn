@@ -391,13 +391,195 @@ p {
 }
 
 .logo {
-  background-image: url('../images/13.jpg?1462542985');
+  background-image: url('../images/13.jpg?1482114299');
 }
 
 @font-face {
   font-family: "glyphicons";
-  src: url('../fonts/glyphicons.eot?1434441378') format('embedded-opentype'), url('../fonts/glyphicons.woff2?1434441378') format('woff2'), url('../fonts/glyphicons.svg?1434441378') format('svg'), url('../fonts/glyphicons.ttf?1434441378') format('truetype'), url('../fonts/glyphicons.woff?1434441378') format('woff');
+  src: url('../fonts/glyphicons.eot?1482114299') format('embedded-opentype'), url('../fonts/glyphicons.woff2?1482114299') format('woff2'), url('../fonts/glyphicons.svg?1482114299') format('svg'), url('../fonts/glyphicons.ttf?1482114299') format('truetype'), url('../fonts/glyphicons.woff?1482114299') format('woff');
 }
 p.bar, div.bar, span.bar {
   color: green;
+}
+
+.goods-price {
+  border: 2px solid black;
+}
+.goods-price thead th {
+  border-bottom: 2px solid black;
+}
+.goods-price tfoot th, .goods-price tfoot td {
+  border-top: 2px solid black;
+}
+.goods-price th:first-child {
+  border-right: 2px solid black;
+}
+.goods-price th, .goods-price td {
+  border-right: 1px solid #233551;
+  border-bottom: 1px solid #233551;
+  border-left-width: 0;
+  border-top-width: 0;
+}
+.goods-price th:last-child, .goods-price td:last-child {
+  border-right-width: 0;
+}
+.goods-price th.last, .goods-price td.last {
+  border-right-width: 0;
+}
+.goods-price tbody tr:last-child th, .goods-price tbody tr:last-child td, .goods-price tfoot tr:last-child th, .goods-price tfoot tr:last-child td {
+  border-bottom-width: 0;
+}
+.goods-price tbody tr.last th, .goods-price tbody tr.last td, .goods-price tfoot tr.last th, .goods-price tfoot tr.last td {
+  border-bottom-width: 0;
+}
+.goods-price th {
+  text-align: center;
+  font-weight: bold;
+}
+.goods-price td,
+.goods-price th {
+  padding: 2px;
+}
+.goods-price td.numeric,
+.goods-price th.numeric {
+  text-align: right;
+}
+.goods-price th {
+  background-color: white;
+}
+.goods-price th.even, .goods-price th:nth-child(2n) {
+  background-color: #dddddd;
+}
+.goods-price tr.odd td, .goods-price tr:nth-child(2n+1) td {
+  background-color: #98c67a;
+}
+.goods-price tr.odd td.even, .goods-price tr.odd td:nth-child(2n), .goods-price tr:nth-child(2n+1) td.even, .goods-price tr:nth-child(2n+1) td:nth-child(2n) {
+  background-color: #76a458;
+}
+.goods-price tr.even td {
+  background-color: #7a98c6;
+}
+.goods-price tr.even td.even, .goods-price tr.even td:nth-child(2n) {
+  background-color: #5876a4;
+}
+.goods-price tfoot th, .goods-price tfoot td {
+  background-color: white;
+}
+.goods-price tfoot th.even, .goods-price tfoot th:nth-child(2n), .goods-price tfoot td.even, .goods-price tfoot td:nth-child(2n) {
+  background-color: #dddddd;
+}
+
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.clear {
+  *zoom: 1;
+}
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.has-layout {
+  *zoom: 1;
+}
+
+.min-height {
+  min-height: 20px;
+}
+
+.tag-cloud {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+.tag-cloud .xxs, .tag-cloud .xs, .tag-cloud .s, .tag-cloud .l, .tag-cloud .xl, .tag-cloud .xxl {
+  line-height: 28.8px;
+}
+.tag-cloud .xxs {
+  font-size: 12px;
+}
+.tag-cloud .xs {
+  font-size: 16px;
+}
+.tag-cloud .s {
+  font-size: 18px;
+}
+.tag-cloud .l {
+  font-size: 32px;
+}
+.tag-cloud .xl {
+  font-size: 36px;
+}
+.tag-cloud .xxl {
+  font-size: 48px;
+}
+
+.box {
+  background: yellow;
+  width: 500px;
+}
+.box .item1, .box .item2 {
+  background: red;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+.box .item2 {
+  background: green;
+}
+
+.logo-sprite, .logo-a, .logo-aactive, .logo-ahover, .logo-b, .logo-c, .logo-d, .logo-e, .main-logo {
+  background-image: url('../images/logo-s21039bfe73.png');
+  background-repeat: no-repeat;
+}
+
+.logo-a {
+  background-position: 0 -800px;
+  height: 200px;
+  width: 229px;
+}
+
+.logo-aactive {
+  background-position: 0 0;
+  height: 200px;
+  width: 416px;
+}
+
+.logo-ahover {
+  background-position: 0 -400px;
+  height: 200px;
+  width: 246px;
+}
+
+.logo-b {
+  background-position: -200px -1000px;
+  height: 200px;
+  width: 200px;
+}
+
+.logo-c {
+  background-position: 0 -600px;
+  height: 200px;
+  width: 233px;
+}
+
+.logo-d {
+  background-position: 0 -1200px;
+  height: 200px;
+  width: 200px;
+}
+
+.logo-e {
+  background-position: -200px -1200px;
+  height: 200px;
+  width: 200px;
+}
+
+.main-logo {
+  background-position: 0 -800px;
+  height: 200px;
+  width: 229px;
 }
